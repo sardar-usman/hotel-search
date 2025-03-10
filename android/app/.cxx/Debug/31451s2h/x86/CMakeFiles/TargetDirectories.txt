@@ -1,0 +1,2 @@
+/Users/osman/Projects/hotel-search/android/app/.cxx/Debug/31451s2h/x86/CMakeFiles/edit_cache.dir
+/Users/osman/Projects/hotel-search/android/app/.cxx/Debug/31451s2h/x86/CMakeFiles/rebuild_cache.dir
