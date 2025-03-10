@@ -21,6 +21,12 @@ jobs:
           git clone https://github.com/flutter/flutter.git -b stable --depth 1
           echo "$GITHUB_WORKSPACE/flutter/bin" >> $GITHUB_PATH
 
+      - name: Install Java 17
+        run: |
+          brew install openjdk@17
+          echo "export JAVA_HOME=$(brew --prefix openjdk@17)" >> $GITHUB_ENV
+          echo "export PATH=$JAVA_HOME/bin:$PATH" >> $GITHUB_ENV
+
       - name: Install dependencies
         run: flutter pub get
 
@@ -62,6 +68,12 @@ jobs:
         run: |
           git clone https://github.com/flutter/flutter.git -b stable --depth 1
           echo "$GITHUB_WORKSPACE/flutter/bin" >> $GITHUB_PATH
+
+      - name: Install Java 17
+        run: |
+          brew install openjdk@17
+          echo "export JAVA_HOME=$(brew --prefix openjdk@17)" >> $GITHUB_ENV
+          echo "export PATH=$JAVA_HOME/bin:$PATH" >> $GITHUB_ENV
 
       - name: Install dependencies
         run: flutter pub get
